@@ -34,4 +34,31 @@ The goal is to scrape any website, clean the HTML content, extract the `<body>`,
 ---
 
 ## 📁 Project Structure
+├── main.py # Streamlit UI
+├── scrape.py # Website scraping utilities
+├── parse.py # LLM parsing utilities
+├── requirements.txt # Python dependencies
+└── README.md # Documentation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/ranim2001-lab/streamlit-web-scraper.git
+cd streamlit-web-scraper
+
+2️⃣ Install dependencies
+pip install -r requirements.txt
+
+3️⃣ (Optional) Install Ollama
+
+If you want to use the local LLM parsing:
+
+https://ollama.com/download
+
+Then pull a model (example):
+
+ollama pull llama3.1
+
+▶️ Run the Streamlit App
+streamlit run main.py
 
